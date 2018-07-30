@@ -1,3 +1,3 @@
-![anatolia](https://pastheme.com/storage/modules/ankara.png)
+![ui3kitify](https://pastheme.com/storage/modules/ankara.png)
 
-### Ankara Anatolia Theme
+### UI3Ktitify Theme

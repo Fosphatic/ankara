@@ -103,7 +103,7 @@
             this.$set('image', this.image || {src: '', blend: '', size:'',fixed:''});
             this.$set('img', _.extend({}, this.image));
 
-            this.$http.get('apianatolia/getblend').then(response => {
+            this.$http.get('apiui3kitify/getblend').then(response => {
               this.$set('blends' , response.data.blendList);
             });
 

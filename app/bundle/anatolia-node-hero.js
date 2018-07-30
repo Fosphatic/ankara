@@ -48,7 +48,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(1)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] app/components/anatolia-node-hero.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] app/components/ui3kitify-node-hero.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(5)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -65,7 +65,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-4a38802c/anatolia-node-hero.vue"
+	  var id = "_v-4a38802c/ui3kitify-node-hero.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -91,7 +91,7 @@
 	    priority: 90
 	  }
 	};
-	window.Site.components['anatolia-node-hero'] = module.exports;
+	window.Site.components['ui3kitify-node-hero'] = module.exports;
 
 /***/ }),
 /* 2 */
@@ -155,7 +155,7 @@
 	        this.$set('image', this.image || { src: '', blend: '', size: '', fixed: '' });
 	        this.$set('img', _.extend({}, this.image));
 
-	        this.$http.get('apianatolia/getblend').then(function (response) {
+	        this.$http.get('apiui3kitify/getblend').then(function (response) {
 	            _this.$set('blends', response.data.blendList);
 	        });
 	    },

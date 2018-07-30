@@ -1,6 +1,6 @@
 <?php
 
-namespace Pastheme\Anatolia;
+namespace SvenSuchan\UI3Kitify;
 
 use Pagekit\Application as App;
 

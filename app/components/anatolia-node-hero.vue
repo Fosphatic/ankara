@@ -100,5 +100,5 @@
       priority:90
     }
   }
-  window.Site.components['anatolia-node-hero'] = module.exports;
+  window.Site.components['ui3kitify-node-hero'] = module.exports;
 </script>

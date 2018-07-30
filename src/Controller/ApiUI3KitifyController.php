@@ -1,11 +1,11 @@
 <?php
 
-namespace Pastheme\Anatolia\Controller;
+namespace SvenSuchan\UI3Kitify\Controller;
 
 use Pagekit\Application as App;
-use Pastheme\Anatolia\OtherExtends;
+use SvenSuchan\UI3Kitify\OtherExtends;
 
-class ApiAnatoliaController{
+class ApiUI3KitifyController{
 
   /**
   * @Route(methods="GET")
@@ -41,10 +41,10 @@ class ApiAnatoliaController{
   */
   public function saveThemeConfigAction($data){
     print_r($data['others']);
-    App::config('ankara')->set('navbar' , $data['navbar']);
-    App::config('ankara')->set('footer' , $data['footer']);
-    App::config('ankara')->set('content' , $data['content']);
-    App::config('ankara')->set('others' , $data['others']);
+    App::config('ui3kitify')->set('navbar' , $data['navbar']);
+    App::config('ui3kitify')->set('footer' , $data['footer']);
+    App::config('ui3kitify')->set('content' , $data['content']);
+    App::config('ui3kitify')->set('others' , $data['others']);
 
     return ['msg' => true];
 

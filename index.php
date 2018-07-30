@@ -2,30 +2,30 @@
 use Pagekit\Application;
 return [
 
-  'name'  => 'ankara',
+  'name'  => 'ui3kitify',
   'main'  => function(Application $app){},
   'resources' => ['theme:'=>'theme'],
-  'autoload'  => ['Pastheme\\Anatolia\\' => 'src'],
-  'settings' => '@anatolia',
+  'autoload'  => ['SvenSuchan\\UI3Kitify\\' => 'src'],
+  'settings' => '@ui3kitify',
 
   'menu' => [
-    'anatolia' => [
-      'label' => 'Anatolia',
+    'ui3kitify' => [
+      'label' => 'UI3Kitify',
       'icon'  => 'theme:logo.svg',
-      'url'   => '@anatolia',
+      'url'   => '@ui3kitify',
       'priority'=> 999
     ],
-    'anatolia: info' => [
-      'parent'=> 'anatolia',
+    'ui3kitify: info' => [
+      'parent'=> 'ui3kitify',
       'label' => 'Info',
-      'url'   => '@anatolia',
-      'active'=> '@anatolia'
+      'url'   => '@ui3kitify',
+      'active'=> '@ui3kitify'
     ],
-    'anatolia: themes' => [
-      'parent'=> 'anatolia',
+    'ui3kitify: themes' => [
+      'parent'=> 'ui3kitify',
       'label' => 'Theme Configure',
-      'url'   => '@anatolia/themeconfigure',
-      'active'   => '@anatolia/themeconfigure*',
+      'url'   => '@ui3kitify/themeconfigure',
+      'active'   => '@ui3kitify/themeconfigure*',
     ],
   ],
 
@@ -45,16 +45,16 @@ return [
   ],
 
   'routes' => [
-    '/apianatolia' => [
-      'name' => '@apianatolia',
+    '/apiui3kitify' => [
+      'name' => '@apiui3kitify',
       'controller' => [
-        'Pastheme\\Anatolia\\Controller\\ApiAnatoliaController'
+        'Pastheme\\UI3Kitify\\Controller\\ApiUI3KitifyController'
       ]
     ],
-    '/anatolia' => [
-      'name'  => '@anatolia',
+    '/ui3kitify' => [
+      'name'  => '@ui3kitify',
       'controller'  => [
-        'Pastheme\\Anatolia\\Controller\\AnatoliaController'
+        'Pastheme\\UI3Kitify\\Controller\\UI3KitifyController'
       ]
     ]
   ],
@@ -90,7 +90,7 @@ return [
     'content' => 'uk-container',
     'footer'  => [
       'active'  => false,
-      'content' => 'Theme Created by <a href="https://www.pasheme.com" target="_blank">Pastheme</a> for <a href="https://www.pagekit.com" target="_blank">Pagekit</a>'
+      'content' => 'Theme Created by <a href="https://www.suchan.me" target="_blank">Sven Suchan</a> for <a href="https://www.pagekit.com" target="_blank">Pagekit</a>'
     ],
     'others' => [
       'logo_contrast' => ''
@@ -99,7 +99,7 @@ return [
 
   'events'  => [
     'view.system/site/admin/edit' => function($event , $view){
-      $view->script('anatolia-node-hero' , 'theme:app/bundle/anatolia-node-hero.js' , 'site-edit');
+      $view->script('ui3kitify-node-hero' , 'theme:app/bundle/ui3kitify-node-hero.js' , 'site-edit');
     },
 
     'view.system/widget/edit' => function ($event, $view) {

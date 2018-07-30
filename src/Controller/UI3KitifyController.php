@@ -1,13 +1,13 @@
 <?php
 
-namespace Pastheme\Anatolia\Controller;
+namespace SvenSuchan\UI3Kitify\Controller;
 
 use Pagekit\Application as App;
-use Pastheme\Anatolia\OtherExtends;
+use SvenSuchan\UI3Kitify\OtherExtends;
 /**
 * @Access(admin=true)
 */
-class AnatoliaController{
+class UI3KitifyController{
 
   /**
   * @Route("/")

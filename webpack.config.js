@@ -1,7 +1,7 @@
 module.exports = [
   {
     entry: {
-      "anatolia-node-hero": "./app/components/anatolia-node-hero.vue",
+      "ui3kitify-node-hero": "./app/components/ui3kitify-node-hero.vue",
       "widget-theme": "./app/components/widget-theme.vue",
       "theme-configure": "./app/views/theme-configure.js",
     },
